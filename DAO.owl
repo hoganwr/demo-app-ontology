@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY acgt2 "http://www.ifomis.org/acgt/1.0#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY acgt "http://www.ifomis.org/acgt/1.0/#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY NCBITaxon "http://purl.org/obo/owl/NCBITaxon#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dao "http://purl.obolibrary.org/obo/dao.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Fungi "http://purl.obolibrary.org/obo/dao.owl#Fungi/" >
+    <!ENTITY _Latino "http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino," >
+]>
+
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:acgt="http://www.ifomis.org/acgt/1.0/#"
+     xmlns:Fungi="&obo;dao.owl#Fungi/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:_Latino="&obo;dao.owl#Hispanic,_Latino,"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dao="&obo;dao.owl#"
+     xmlns:acgt2="http://www.ifomis.org/acgt/1.0#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;dao.owl">
+        <rdfs:label xml:lang="en">The Demographics Application Ontology</rdfs:label>
+        <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
+        <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
+        <rdfs:comment xml:lang="en">The demographics application ontology is an application ontology with key representational units necessary for collecting, handling, displaying, etc. data that typically falls under the heading &#39;demographics&#39;. For example, it has terms for gender, sex, marital status, etc.
+
+As an application ontology, it only imports representations of universals, it does not create any new ones. The only new content it adds is various attributive collections (previously known as &quot;defined classes&quot;) that are collections of particulars that are not extensions of universals.
+
+For example, it imports sex terms from PATO, gender and marital status terms from the Ontology of Medically Related Social Entities, birth event from the ACGT ontology, and human being from the Ontology of Biomedical Investigations.</rdfs:comment>
+        <dc:creator xml:lang="en">William Hogan</dc:creator>
+        <owl:imports rdf:resource="&obo;iao/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_id"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_alt_id"/>
+    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_consider"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_subset"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_created_by"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_creation_date"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_namespace"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_xref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OMRSE_00000020">
+        <rdfs:label>is-aggregate-of
+        </rdfs:label>
+        <rdfs:comment>We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.  
+	    </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000021 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OMRSE_00000021">
+        <rdfs:label>is-component-of-aggregate
+        </rdfs:label>
+        <rdfs:comment>At the instance level, this relation is the named inverse of is-aggregate-of.
+        At the type level, however, not so. We expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO&#39;s version when BFO 2.0 comes out.
+        </rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#birthOf -->
+
+    <owl:ObjectProperty rdf:about="&acgt;birthOf">
+        <rdfs:domain rdf:resource="&acgt;Birth"/>
+        <owl:inverseOf rdf:resource="&acgt;hasBirth"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#hasBirth -->
+
+    <owl:ObjectProperty rdf:about="&acgt;hasBirth">
+        <rdfs:range rdf:resource="&acgt;Birth"/>
+        <rdfs:subPropertyOf rdf:resource="&acgt;magnitudeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#hasProcessBoundary -->
+
+    <owl:ObjectProperty rdf:about="&acgt;hasProcessBoundary"/>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#hasProcessStart -->
+
+    <owl:ObjectProperty rdf:about="&acgt;hasProcessStart">
+        <rdfs:subPropertyOf rdf:resource="&acgt;hasProcessBoundary"/>
+        <owl:inverseOf rdf:resource="&acgt;processStartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#magnitudeOf -->
+
+    <owl:ObjectProperty rdf:about="&acgt;magnitudeOf"/>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#processStartOf -->
+
+    <owl:ObjectProperty rdf:about="&acgt;processStartOf">
+        <rdfs:subPropertyOf rdf:resource="&span;ProcessBoundaryOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessBoundaryOf -->
+
+    <owl:ObjectProperty rdf:about="&span;ProcessBoundaryOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100026">
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <IAO_0000116 rdf:datatype="&xsd;string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &#39;other organisms&#39;)</IAO_0000116>
+        <IAO_0000116 rdf:datatype="&xsd;string">13-02-2009:
+OBI doesn&#39;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+This issue is outside the scope of OBI.</IAO_0000116>
+        <IAO_0000117 rdf:datatype="&xsd;string">GROUP: OBI Biomaterial Branch</IAO_0000117>
+        <IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</IAO_0000115>
+        <IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</IAO_0000119>
+        <IAO_0000112 xml:lang="en">animal</IAO_0000112>
+        <IAO_0000112 xml:lang="en">fungus</IAO_0000112>
+        <IAO_0000111 xml:lang="en">organism</IAO_0000111>
+        <IAO_0000112 xml:lang="en">plant</IAO_0000112>
+        <IAO_0000112 xml:lang="en">virus</IAO_0000112>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000001 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000001">
+        <rdfs:label xml:lang="en">human social role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000026"/>
+        <IAO_0000115 xml:lang="en">A role in human social processes played by a person.</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000002 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000002">
+        <rdfs:label xml:lang="en">party to a legal entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000004 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000004">
+        <rdfs:label xml:lang="en">party to a legal agreement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000005 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000005">
+        <rdfs:label xml:lang="en">party to a marriage contract</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000007 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000007">
+        <rdfs:label xml:lang="en">gender role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000008 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000008">
+        <rdfs:label xml:lang="en">male gender</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000009 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000009">
+        <rdfs:label xml:lang="en">female gender</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000022">
+        <rdfs:label xml:lang="en">collection_of_organisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
+        <IAO_0000115 xml:lang="en">An object aggregate of organisms.</IAO_0000115>
+        <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000023">
+        <rdfs:label xml:lang="en">collection of humans</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000022"/>
+        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000024">
+        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <IAO_0000115 xml:lang="en">A role played by an entity in human social processes.</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000026 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000026">
+        <rdfs:label xml:lang="en">organism social role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000024"/>
+        <IAO_0000115 xml:lang="en">A role in human social processes played by an organism.</IAO_0000115>
+        <rdfs:comment xml:lang="en">Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000001">
+        <rdfs:label rdf:datatype="&xsd;string">quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;SpecificallyDependentContinuant"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0000001</IAO_id>
+        <IAO_alt_id rdf:datatype="&xsd;string">PATO:0000072</IAO_alt_id>
+        <IAO_0000118 rdf:datatype="&xsd;string">trait</IAO_0000118>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0000001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">trait</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0000001"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000047">
+        <rdfs:label rdf:datatype="&xsd;string">biological sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001995"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0000047</IAO_id>
+        <IAO_subset rdf:datatype="&xsd;string">attribute_slim</IAO_subset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">MGED:MGED</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0000047"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000383 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000383">
+        <rdfs:label rdf:datatype="&xsd;string">female</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0000383</IAO_id>
+        <IAO_subset rdf:datatype="&xsd;string">value_slim</IAO_subset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">MGED:MGED</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0000383"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000384 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000384">
+        <rdfs:label rdf:datatype="&xsd;string">male</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001894"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0000384</IAO_id>
+        <IAO_subset rdf:datatype="&xsd;string">value_slim</IAO_subset>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">MGED:MGED</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0000384"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001237 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001237">
+        <rdfs:label rdf:datatype="&xsd;string">quality of a single physical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001241"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">A physical object quality which inheres in a single-bearer.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0001237</IAO_id>
+        <IAO_0000118 rdf:datatype="&xsd;string">monadic quality of a continuant</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">monadic quality of a physical entity</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">monadic quality of an object</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">monadic quality of continuant</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">single bearer quality of a physical entity</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">singly inhering of a physical entity</IAO_0000118>
+    </owl:Class>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A physical object quality which inheres in a single-bearer.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">singly inhering of a physical entity</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">single bearer quality of a physical entity</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a physical entity</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001241">
+        <rdfs:label rdf:datatype="&xsd;string">physical object quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000001"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">A quality which inheres in a continuant.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0001241</IAO_id>
+        <IAO_0000118 rdf:datatype="&xsd;string">quality of a continuant</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">quality of an object</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">quality of continuant</IAO_0000118>
+        <IAO_xref rdf:datatype="&xsd;string">snap:Quality</IAO_xref>
+    </owl:Class>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of an object</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A quality which inheres in a continuant.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001894">
+        <rdfs:label rdf:datatype="&xsd;string">phenotypic sex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000047"/>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0001894</IAO_id>
+        <IAO_subset rdf:datatype="&xsd;string">attribute_slim</IAO_subset>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001995">
+        <rdfs:label rdf:datatype="&xsd;string">organismal quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001237"/>
+        <IAO_0000115 rdf:datatype="&xsd;string">A quality that inheres in an entire organism or part of an organism.</IAO_0000115>
+        <IAO_id rdf:datatype="&xsd;string">PATO:0001995</IAO_id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A quality that inheres in an entire organism or part of an organism.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">PATOC:CJM</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001995"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674 -->
+
+    <owl:Class rdf:about="&NCBITaxon;NCBITaxon_40674">
+        <rdfs:label xml:lang="en">Mammalia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <IAO_0000111 xml:lang="en">Mammalia</IAO_0000111>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443 -->
+
+    <owl:Class rdf:about="&NCBITaxon;NCBITaxon_9443">
+        <rdfs:label xml:lang="en">Primates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&NCBITaxon;NCBITaxon_40674"/>
+        <IAO_0000111 xml:lang="en">Primates</IAO_0000111>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="&NCBITaxon;NCBITaxon_9606">
+        <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&NCBITaxon;NCBITaxon_9443"/>
+        <IAO_0000118 rdf:datatype="&xsd;string">human being</IAO_0000118>
+        <IAO_0000111 xml:lang="en">Homo sapiens</IAO_0000111>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#Birth -->
+
+    <owl:Class rdf:about="&acgt;Birth">
+        <rdfs:subClassOf rdf:resource="&acgt;ProcessStart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#Death -->
+
+    <owl:Class rdf:about="&acgt;Death">
+        <rdfs:subClassOf rdf:resource="&acgt;ProcessEnd"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#ProcessEnd -->
+
+    <owl:Class rdf:about="&acgt;ProcessEnd">
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/acgt/1.0/#ProcessStart -->
+
+    <owl:Class rdf:about="&acgt;ProcessStart">
+        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
+
+    <owl:Class rdf:about="&snap;GenericallyDependentContinuant">
+        <rdfs:label rdf:datatype="&xsd;string">generically_dependent_continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
+        <owl:disjointWith rdf:resource="&snap;SpecificallyDependentContinuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: a certain PDF file that exists in different and in several hard drives</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="&snap;MaterialEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate -->
+
+    <owl:Class rdf:about="&snap;ObjectAggregate"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
+
+    <owl:Class rdf:about="&snap;RealizableEntity"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="&snap;Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="&snap;SpecificallyDependentContinuant">
+        <rdfs:label rdf:datatype="&xsd;string">specifically_dependent_continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: property, trope, mode</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessBoundary -->
+
+    <owl:Class rdf:about="&span;ProcessBoundary">
+        <rdfs:label rdf:datatype="&xsd;string">process_boundary</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: A processual entity [span:ProcessualEntity] that is the fiat or bona fide instantaneous temporal process boundary.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: birth, death, the forming of a synapse, the onset of REM sleep, the detaching of a finger in an industrial accident, the final separation of two cells at the end of cell-division, the incision at the beginning of a surgery</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
+
+    <owl:Class rdf:about="&span;ProcessualEntity">
+        <rdfs:label rdf:datatype="&xsd;string">processual_entity</rdfs:label>
+        <rdfs:comment rdf:datatype="&xsd;string">Definition: An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Examples: the life of an organism, the process of meiosis, the course of a disease, the flight of a bird</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#African_American_or_Black_Culture -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#African_American_or_Black_Culture">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans whose affiliation with the African-American or Black race is due to the influences of cultures that are typical of any of the black racial groups of Africa on their own culture</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#African_American_or_Black_Origin -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#African_American_or_Black_Origin">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans with origins in any of the black racial groups of Africa</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#African_American_or_Black_Physical_Characteristics -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#African_American_or_Black_Physical_Characteristics">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with the any of the black racial groups of Africa</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#American_Indian_or_Alaskan_Native_Culture -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#American_Indian_or_Alaskan_Native_Culture">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans whose affiliation with the American Indian or Alaskan Native race is due to the influences of cultures that are typical of the original peoples of North and South America (including Central America) on their culture</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#American_Indian_or_Alaskan_Native_Origin -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#American_Indian_or_Alaskan_Native_Origin">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of North and South America (including Central America)</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#American_Indian_or_Alaskan_Native_Physical_Characteristics -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#American_Indian_or_Alaskan_Native_Physical_Characteristics">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with the any of the original peoples of North and South America (including Central America)</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Asian_Culture -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Asian_Culture">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans whose culture is influenced by cultures typical of the people of the Far East, Southeast Asia, or the Indian subcontinent including Cambodia, China, India, Japan,Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Asian_Origin -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Asian_Origin">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including Cambodia, China, India, Japan,Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Asian_Physical_Characteristics -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Asian_Physical_Characteristics">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans who have physical characteristics that are typical of the people of the Far East, Southeast Asia, or the Indian subcontinent including Cambodia, China, India, Japan,Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Caucasian_or_White_Culture -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Caucasian_or_White_Culture">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans whose affiliation with the Caucasian or White race is due to the influences of cultures that are typical of the people of Europe, the Middle East, or North Africa on their culture</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Caucasian_or_White_Origin -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Caucasian_or_White_Origin">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of Europe, the Middle East, or North Africa</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Caucasian_or_White_Physical_Characteristics -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Caucasian_or_White_Physical_Characteristics">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with any of the original peoples of Europe, the Middle East, or North Africa</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Hawaiian_Native_or_Pacific_Islander_Culture -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hawaiian_Native_or_Pacific_Islander_Culture">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans whose affiliation with the Hawaiian Native or Pacific Islander race is due to the influences of cultures that are typical of any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands on their own culture</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Hawaiian_Native_or_Pacific_Islander_Origin -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hawaiian_Native_or_Pacific_Islander_Origin">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Hawaiian_Native_or_Pacific_Islander_Physical_Characteristics -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hawaiian_Native_or_Pacific_Islander_Physical_Characteristics">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino,_or_Spanish_Culture -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hispanic,_Latino,_or_Spanish_Culture">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans whose affiliation with the Hispanic or Spanish race is due to the influences of cultures that are typical of the people of Cuba, Mexico, Puerto Rico, South or Central America on their culture</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino,_or_Spanish_Origin -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hispanic,_Latino,_or_Spanish_Origin">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans with origins in Cuba, Mexico, Puerto Rico, South or Central America</IAO_0000115>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino,_or_Spanish_Physical_Characteristics -->
+
+    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hispanic,_Latino,_or_Spanish_Physical_Characteristics">
+        <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with the the people of Cuba, Mexico, Puerto Rico, South or Central America</IAO_0000115>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1785) http://owlapi.sourceforge.net -->
+
