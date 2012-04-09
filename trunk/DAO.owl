@@ -45,8 +45,7 @@ As an application ontology, it only imports representations of universals, it do
 
 For example, it imports sex terms from PATO, gender and marital status terms from the Ontology of Medically Related Social Entities, birth event from the ACGT ontology, and human being from the Ontology of Biomedical Investigations.</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <owl:imports rdf:resource="&obo;iao/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+        <owl:imports rdf:resource="&obo;bfo.owl"/>
     </owl:Ontology>
     
 
@@ -59,6 +58,75 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0100001">
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+        <IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</IAO_0000119>
+        <IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</IAO_0000115>
+        <IAO_0000111 xml:lang="en">term replaced by</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</IAO_0000115>
+        <IAO_0000111 xml:lang="en">definition</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+        <IAO_0000119 xml:lang="en">OBI_0000277</IAO_0000119>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <IAO_0000119 xml:lang="en">OBI_0000281</IAO_0000119>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_creation_date"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">definition source</IAO_0000111>
+        <IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</IAO_0000115>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000115 xml:lang="en">Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">definition editor</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231">
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</IAO_0000115>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">alternative term</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_xref"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</IAO_0000115>
+        <IAO_0000111 xml:lang="en">editor preferred term</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</IAO_0000115>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">example</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_id"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
@@ -68,11 +136,20 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
     <owl:AnnotationProperty rdf:about="&obo;IAO_consider"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_subset"/>
     <owl:AnnotationProperty rdf:about="&obo;IAO_created_by"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_creation_date"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000411">
+        <rdfs:label rdf:datatype="&xsd;string">is denotator type</rdfs:label>
+        <IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</IAO_0000117>
+        <IAO_0000116 rdf:datatype="&xsd;string">In OWL 2 add AnnotationPropertyRange(&#39;is denotator type&#39; &#39;denotator type&#39;)</IAO_0000116>
+        <IAO_0000115 rdf:datatype="&xsd;string">relates an class defined in an ontology, to the type of it&#39;s denotator</IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</IAO_0000115>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000111 xml:lang="en">imported from</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_namespace"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_xref"/>
     
 
 
@@ -189,7 +266,7 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
 
     <owl:Class rdf:about="&obo;OBI_0100026">
         <rdfs:label xml:lang="en">organism</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <IAO_0000116 rdf:datatype="&xsd;string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &#39;other organisms&#39;)</IAO_0000116>
         <IAO_0000116 rdf:datatype="&xsd;string">13-02-2009:
 OBI doesn&#39;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
@@ -275,7 +352,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;OMRSE_00000022">
         <rdfs:label xml:lang="en">collection_of_organisms</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
         <IAO_0000115 xml:lang="en">An object aggregate of organisms.</IAO_0000115>
         <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
     </owl:Class>
@@ -296,7 +373,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;OMRSE_00000024">
         <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <IAO_0000115 xml:lang="en">A role played by an entity in human social processes.</IAO_0000115>
     </owl:Class>
     
@@ -310,31 +387,6 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <IAO_0000115 xml:lang="en">A role in human social processes played by an organism.</IAO_0000115>
         <rdfs:comment xml:lang="en">Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
-
-    <owl:Class rdf:about="&obo;PATO_0000001">
-        <rdfs:label rdf:datatype="&xsd;string">quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;SpecificallyDependentContinuant"/>
-        <IAO_0000115 rdf:datatype="&xsd;string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</IAO_0000115>
-        <IAO_id rdf:datatype="&xsd;string">PATO:0000001</IAO_id>
-        <IAO_alt_id rdf:datatype="&xsd;string">PATO:0000072</IAO_alt_id>
-        <IAO_0000118 rdf:datatype="&xsd;string">trait</IAO_0000118>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities.</owl:annotatedTarget>
-        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0000001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">trait</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0000001"/>
-    </owl:Axiom>
     
 
 
@@ -408,25 +460,13 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Class>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A physical object quality which inheres in a single-bearer.</owl:annotatedTarget>
-        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">singly inhering of a physical entity</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
@@ -438,13 +478,25 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">singly inhering of a physical entity</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A physical object quality which inheres in a single-bearer.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a physical entity</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
@@ -455,7 +507,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;PATO_0001241">
         <rdfs:label rdf:datatype="&xsd;string">physical object quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <IAO_0000115 rdf:datatype="&xsd;string">A quality which inheres in a continuant.</IAO_0000115>
         <IAO_id rdf:datatype="&xsd;string">PATO:0001241</IAO_id>
         <IAO_0000118 rdf:datatype="&xsd;string">quality of a continuant</IAO_0000118>
@@ -477,13 +529,13 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of continuant</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of a continuant</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of continuant</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
@@ -552,7 +604,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0/#Birth -->
+    <!-- http://www.ifomis.org/acgt/1.0#Birth -->
 
     <owl:Class rdf:about="&acgt;Birth">
         <rdfs:subClassOf rdf:resource="&acgt;ProcessStart"/>
@@ -560,7 +612,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0/#Death -->
+    <!-- http://www.ifomis.org/acgt/1.0#Death -->
 
     <owl:Class rdf:about="&acgt;Death">
         <rdfs:subClassOf rdf:resource="&acgt;ProcessEnd"/>
@@ -568,86 +620,18 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0/#ProcessEnd -->
+    <!-- http://www.ifomis.org/acgt/1.0#ProcessEnd -->
 
     <owl:Class rdf:about="&acgt;ProcessEnd">
-        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000035"/>
     </owl:Class>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0/#ProcessStart -->
+    <!-- http://www.ifomis.org/acgt/1.0#ProcessStart -->
 
     <owl:Class rdf:about="&acgt;ProcessStart">
-        <rdfs:subClassOf rdf:resource="&span;ProcessBoundary"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
-
-    <owl:Class rdf:about="&snap;GenericallyDependentContinuant">
-        <rdfs:label rdf:datatype="&xsd;string">generically_dependent_continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
-        <owl:disjointWith rdf:resource="&snap;SpecificallyDependentContinuant"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time.</rdfs:comment>
-        <rdfs:comment rdf:datatype="&xsd;string">Examples: a certain PDF file that exists in different and in several hard drives</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
-
-    <owl:Class rdf:about="&snap;MaterialEntity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate -->
-
-    <owl:Class rdf:about="&snap;ObjectAggregate"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
-
-    <owl:Class rdf:about="&snap;RealizableEntity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
-
-    <owl:Class rdf:about="&snap;Role"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
-
-    <owl:Class rdf:about="&snap;SpecificallyDependentContinuant">
-        <rdfs:label rdf:datatype="&xsd;string">specifically_dependent_continuant</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Definition: A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</rdfs:comment>
-        <rdfs:comment rdf:datatype="&xsd;string">Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</rdfs:comment>
-        <rdfs:comment rdf:datatype="&xsd;string">Synonyms: property, trope, mode</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessBoundary -->
-
-    <owl:Class rdf:about="&span;ProcessBoundary">
-        <rdfs:label rdf:datatype="&xsd;string">process_boundary</rdfs:label>
-        <rdfs:comment rdf:datatype="&xsd;string">Definition: A processual entity [span:ProcessualEntity] that is the fiat or bona fide instantaneous temporal process boundary.</rdfs:comment>
-        <rdfs:comment rdf:datatype="&xsd;string">Examples: birth, death, the forming of a synapse, the onset of REM sleep, the detaching of a finger in an industrial accident, the final separation of two cells at the end of cell-division, the incision at the beginning of a surgery</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
-
-    <owl:Class rdf:about="&span;ProcessualEntity">
-        <rdfs:label rdf:datatype="&xsd;string">processual_entity</rdfs:label>
-        <rdfs:comment rdf:datatype="&xsd;string">Definition: An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</rdfs:comment>
-        <rdfs:comment rdf:datatype="&xsd;string">Examples: the life of an organism, the process of meiosis, the course of a disease, the flight of a bird</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000035"/>
     </owl:Class>
     
 
@@ -826,5 +810,5 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
 
 
-<!-- Generated by the OWL API (version 3.2.2.1785) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 
