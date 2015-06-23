@@ -3,14 +3,14 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY acgt2 "http://www.ifomis.org/acgt/1.0#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY acgt "http://www.ifomis.org/acgt/1.0/#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY NCBITaxon "http://purl.org/obo/owl/NCBITaxon#" >
-    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY dao "http://purl.obolibrary.org/obo/dao.owl#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
@@ -21,25 +21,25 @@
 
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
      xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:acgt="http://www.ifomis.org/acgt/1.0/#"
-     xmlns:Fungi="&obo;dao.owl#Fungi/"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:_Latino="&obo;dao.owl#Hispanic,_Latino,"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dao="&obo;dao.owl#"
-     xmlns:acgt2="http://www.ifomis.org/acgt/1.0#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:acgt2="http://www.ifomis.org/acgt/1.0#"
+     xmlns:_Latino="&obo;dao.owl#Hispanic,_Latino,"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:NCBITaxon="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:Fungi="&obo;dao.owl#Fungi/"
+     xmlns:dao="&obo;dao.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="&obo;dao.owl">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;omrse/dao.owl">
         <rdfs:label xml:lang="en">The Demographics Application Ontology</rdfs:label>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <rdfs:comment xml:lang="en">The demographics application ontology is an application ontology with key representational units necessary for collecting, handling, displaying, etc. data that typically falls under the heading &#39;demographics&#39;. For example, it has terms for gender, sex, marital status, etc.
+        <rdfs:comment xml:lang="en">The demographics application ontology is an application ontology with key representational units necessary for collecting, handling, displaying, etc. data that typically falls under the heading &apos;demographics&apos;. For example, it has terms for gender, sex, marital status, etc.
 
 As an application ontology, it only imports representations of universals, it does not create any new ones. The only new content it adds is various attributive collections (previously known as &quot;defined classes&quot;) that are collections of particulars that are not extensions of universals.
 
@@ -58,59 +58,11 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0100001">
-        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
-        <IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</IAO_0000117>
-        <IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</IAO_0000119>
-        <IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</IAO_0000115>
-        <IAO_0000111 xml:lang="en">term replaced by</IAO_0000111>
-        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
-        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
-        <IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</IAO_0000115>
-        <IAO_0000111 xml:lang="en">definition</IAO_0000111>
-        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000113">
-        <rdfs:label xml:lang="en">in branch</rdfs:label>
-        <IAO_0000119 xml:lang="en">OBI_0000277</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
-        <rdfs:label xml:lang="en">has curation status</rdfs:label>
-        <IAO_0000119 xml:lang="en">OBI_0000281</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_creation_date"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
-        <rdfs:label xml:lang="en">definition source</rdfs:label>
-        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
-        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
-        <IAO_0000111 xml:lang="en">definition source</IAO_0000111>
-        <IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</IAO_0000115>
-        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
-        <rdfs:label xml:lang="en">definition editor</rdfs:label>
-        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
-        <IAO_0000115 xml:lang="en">Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people</IAO_0000115>
-        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
-        <IAO_0000111 xml:lang="en">definition editor</IAO_0000111>
-        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231">
-        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-        <IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</IAO_0000115>
-        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
-        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
-        <IAO_0000111 xml:lang="en">alternative term</IAO_0000111>
-        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_xref"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
         <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
@@ -119,6 +71,11 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
         <IAO_0000111 xml:lang="en">editor preferred term</IAO_0000111>
         <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
         <IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</IAO_0000115>
@@ -127,21 +84,100 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
         <IAO_0000111 xml:lang="en">example</IAO_0000111>
         <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_id"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_alt_id"/>
-    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_consider"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_subset"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_created_by"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000113 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+        <IAO_0000119 xml:lang="en">OBI_0000277</IAO_0000119>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <IAO_0000119 xml:lang="en">OBI_0000281</IAO_0000119>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</IAO_0000115>
+        <IAO_0000111 xml:lang="en">definition</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000115 xml:lang="en">Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">definition editor</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</IAO_0000115>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">alternative term</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000111 xml:lang="en">definition source</IAO_0000111>
+        <IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</IAO_0000115>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231">
+        <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000411 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000411">
         <rdfs:label rdf:datatype="&xsd;string">is denotator type</rdfs:label>
         <IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</IAO_0000117>
-        <IAO_0000116 rdf:datatype="&xsd;string">In OWL 2 add AnnotationPropertyRange(&#39;is denotator type&#39; &#39;denotator type&#39;)</IAO_0000116>
-        <IAO_0000115 rdf:datatype="&xsd;string">relates an class defined in an ontology, to the type of it&#39;s denotator</IAO_0000115>
+        <IAO_0000116 rdf:datatype="&xsd;string">In OWL 2 add AnnotationPropertyRange(&apos;is denotator type&apos; &apos;denotator type&apos;)</IAO_0000116>
+        <IAO_0000115 rdf:datatype="&xsd;string">relates an class defined in an ontology, to the type of it&apos;s denotator</IAO_0000115>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
         <IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</IAO_0000115>
@@ -149,18 +185,91 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
         <IAO_0000111 xml:lang="en">imported from</IAO_0000111>
         <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0100001">
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+        <IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</IAO_0000119>
+        <IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</IAO_0000115>
+        <IAO_0000111 xml:lang="en">term replaced by</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_alt_id -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_alt_id"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_consider -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_consider"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_created_by -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_created_by"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_creation_date"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_id -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_id"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_namespace -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_namespace"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_subset -->
 
+    <owl:AnnotationProperty rdf:about="&obo;IAO_subset"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_xref -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_xref"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     
 
 
@@ -192,7 +301,7 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
         <rdfs:label>is-component-of-aggregate
         </rdfs:label>
         <rdfs:comment>At the instance level, this relation is the named inverse of is-aggregate-of.
-        At the type level, however, not so. We expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO&#39;s version when BFO 2.0 comes out.
+        At the type level, however, not so. We expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO&apos;s version when BFO 2.0 comes out.
         </rdfs:comment>
     </owl:ObjectProperty>
     
@@ -267,9 +376,9 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
     <owl:Class rdf:about="&obo;OBI_0100026">
         <rdfs:label xml:lang="en">organism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <IAO_0000116 rdf:datatype="&xsd;string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &#39;other organisms&#39;)</IAO_0000116>
+        <IAO_0000116 rdf:datatype="&xsd;string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</IAO_0000116>
         <IAO_0000116 rdf:datatype="&xsd;string">13-02-2009:
-OBI doesn&#39;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
 This issue is outside the scope of OBI.</IAO_0000116>
         <IAO_0000117 rdf:datatype="&xsd;string">GROUP: OBI Biomaterial Branch</IAO_0000117>
         <IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</IAO_0000115>
@@ -395,12 +504,12 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <owl:Class rdf:about="&obo;PATO_0000047">
         <rdfs:label rdf:datatype="&xsd;string">biological sex</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PATO_0001995"/>
-        <IAO_0000115 rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</IAO_0000115>
+        <IAO_0000115 rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</IAO_0000115>
         <IAO_id rdf:datatype="&xsd;string">PATO:0000047</IAO_id>
         <IAO_subset rdf:datatype="&xsd;string">attribute_slim</IAO_subset>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&#39;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to undergo sexual reproduction in order to differentiate the individuals or types involved.</owl:annotatedTarget>
         <IAO_xref rdf:datatype="&xsd;string">MGED:MGED</IAO_xref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0000047"/>
@@ -460,25 +569,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Class>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a continuant</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">single bearer quality of a physical entity</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">singly inhering of a physical entity</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
@@ -490,13 +581,31 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">singly inhering of a physical entity</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">single bearer quality of a physical entity</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a physical entity</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
@@ -517,14 +626,14 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Class>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of an object</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of continuant</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A quality which inheres in a continuant.</owl:annotatedTarget>
-        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of an object</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -534,9 +643,9 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of continuant</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A quality which inheres in a continuant.</owl:annotatedTarget>
+        <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     
@@ -604,7 +713,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0#Birth -->
+    <!-- http://www.ifomis.org/acgt/1.0/#Birth -->
 
     <owl:Class rdf:about="&acgt;Birth">
         <rdfs:subClassOf rdf:resource="&acgt;ProcessStart"/>
@@ -612,7 +721,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0#Death -->
+    <!-- http://www.ifomis.org/acgt/1.0/#Death -->
 
     <owl:Class rdf:about="&acgt;Death">
         <rdfs:subClassOf rdf:resource="&acgt;ProcessEnd"/>
@@ -620,7 +729,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0#ProcessEnd -->
+    <!-- http://www.ifomis.org/acgt/1.0/#ProcessEnd -->
 
     <owl:Class rdf:about="&acgt;ProcessEnd">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000035"/>
@@ -628,7 +737,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://www.ifomis.org/acgt/1.0#ProcessStart -->
+    <!-- http://www.ifomis.org/acgt/1.0/#ProcessStart -->
 
     <owl:Class rdf:about="&acgt;ProcessStart">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000035"/>
@@ -647,168 +756,188 @@ This issue is outside the scope of OBI.</IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#African_American_or_Black_Culture -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/African_American_or_Black_Culture -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#African_American_or_Black_Culture">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/African_American_or_Black_Culture">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">African American or Black race by cultural self identification</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans whose affiliation with the African-American or Black race is due to the influences of cultures that are typical of any of the black racial groups of Africa on their own culture</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#African_American_or_Black_Origin -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/African_American_or_Black_Origin -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#African_American_or_Black_Origin">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/African_American_or_Black_Origin">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">African American or Black race by geography of ancestral origin</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans with origins in any of the black racial groups of Africa</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#African_American_or_Black_Physical_Characteristics -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/African_American_or_Black_Physical_Characteristics -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#African_American_or_Black_Physical_Characteristics">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/African_American_or_Black_Physical_Characteristics">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">African American or Black race by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with the any of the black racial groups of Africa</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#American_Indian_or_Alaskan_Native_Culture -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/American_Indian_or_Alaskan_Native_Culture -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#American_Indian_or_Alaskan_Native_Culture">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/American_Indian_or_Alaskan_Native_Culture">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">American Indian or Alaskan Native race by cultural self identification</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans whose affiliation with the American Indian or Alaskan Native race is due to the influences of cultures that are typical of the original peoples of North and South America (including Central America) on their culture</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#American_Indian_or_Alaskan_Native_Origin -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/American_Indian_or_Alaskan_Native_Origin -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#American_Indian_or_Alaskan_Native_Origin">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/American_Indian_or_Alaskan_Native_Origin">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">American Indian or Alaskan Native race by geography of ancestral origin</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of North and South America (including Central America)</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#American_Indian_or_Alaskan_Native_Physical_Characteristics -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/American_Indian_or_Alaskan_Native_Physical_Characteristics -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#American_Indian_or_Alaskan_Native_Physical_Characteristics">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/American_Indian_or_Alaskan_Native_Physical_Characteristics">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">American Indian or Alaskan Native race by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with the any of the original peoples of North and South America (including Central America)</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Asian_Culture -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Asian_Culture -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Asian_Culture">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Asian_Culture">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Asian race by cultural self identification</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans whose culture is influenced by cultures typical of the people of the Far East, Southeast Asia, or the Indian subcontinent including Cambodia, China, India, Japan,Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Asian_Origin -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Asian_Origin -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Asian_Origin">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Asian_Origin">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Asian race by geography of ancestral origin</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent including Cambodia, China, India, Japan,Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Asian_Physical_Characteristics -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Asian_Physical_Characteristics -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Asian_Physical_Characteristics">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Asian_Physical_Characteristics">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Asian race by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans who have physical characteristics that are typical of the people of the Far East, Southeast Asia, or the Indian subcontinent including Cambodia, China, India, Japan,Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Caucasian_or_White_Culture -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Caucasian_or_White_Culture -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Caucasian_or_White_Culture">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Caucasian_or_White_Culture">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Caucasian or White race by cultural self identification</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans whose affiliation with the Caucasian or White race is due to the influences of cultures that are typical of the people of Europe, the Middle East, or North Africa on their culture</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Caucasian_or_White_Origin -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Caucasian_or_White_Origin -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Caucasian_or_White_Origin">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Caucasian_or_White_Origin">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Caucasian or White race by geography of ancestral origin</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of Europe, the Middle East, or North Africa</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Caucasian_or_White_Physical_Characteristics -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Caucasian_or_White_Physical_Characteristics -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Caucasian_or_White_Physical_Characteristics">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Caucasian_or_White_Physical_Characteristics">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Caucasian or White race by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with any of the original peoples of Europe, the Middle East, or North Africa</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Hawaiian_Native_or_Pacific_Islander_Culture -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Hawaiian_Native_or_Pacific_Islander_Culture -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hawaiian_Native_or_Pacific_Islander_Culture">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Hawaiian_Native_or_Pacific_Islander_Culture">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Hawaiian native or Pacific islander race by cultural self identification</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans whose affiliation with the Hawaiian Native or Pacific Islander race is due to the influences of cultures that are typical of any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands on their own culture</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Hawaiian_Native_or_Pacific_Islander_Origin -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Hawaiian_Native_or_Pacific_Islander_Origin -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hawaiian_Native_or_Pacific_Islander_Origin">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Hawaiian_Native_or_Pacific_Islander_Origin">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Hawaiian native or Pacific islander race by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans with origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Hawaiian_Native_or_Pacific_Islander_Physical_Characteristics -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Hawaiian_Native_or_Pacific_Islander_Physical_Characteristics -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hawaiian_Native_or_Pacific_Islander_Physical_Characteristics">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Hawaiian_Native_or_Pacific_Islander_Physical_Characteristics">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Hawaiian native or Pacific islander race by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino,_or_Spanish_Culture -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Hispanic_Latino_or_Spanish_Culture -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hispanic,_Latino,_or_Spanish_Culture">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Hispanic_Latino_or_Spanish_Culture">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">According to US Census 2010: People who identify their origin as Hispanic, Latino, or Spanish may be any race.</rdfs:label>
+        <rdfs:label xml:lang="en">Hispanic, Latino, or Spanish ethnicity by cultural self identification</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans whose affiliation with the Hispanic or Spanish race is due to the influences of cultures that are typical of the people of Cuba, Mexico, Puerto Rico, South or Central America on their culture</IAO_0000115>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino,_or_Spanish_Origin -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Hispanic_Latino_or_Spanish_Origin -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hispanic,_Latino,_or_Spanish_Origin">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Hispanic_Latino_or_Spanish_Origin">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Hispanic, Latino, or Spanish ethnicity by geography of origin and/or ancestral origin</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans with origins in Cuba, Mexico, Puerto Rico, South or Central America</IAO_0000115>
+        <rdfs:comment xml:lang="en">The 2010 Census definition clearly allows for the individual herself to be from a particular geography and count as Hispanic, Latino, or other Spanish origin.  It is not necessary for geographical origin to be ancestral in this case.</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/dao.owl#Hispanic,_Latino,_or_Spanish_Physical_Characteristics -->
+    <!-- http://purl.obolibrary.org/obo/omrse/dao/Hispanic_Latino_or_Spanish_Physical_Characteristics -->
 
-    <owl:NamedIndividual rdf:about="&obo;dao.owl#Hispanic,_Latino,_or_Spanish_Physical_Characteristics">
+    <owl:NamedIndividual rdf:about="&obo;omrse/dao/Hispanic_Latino_or_Spanish_Physical_Characteristics">
         <rdf:type rdf:resource="&obo;OMRSE_00000023"/>
+        <rdfs:label xml:lang="en">Hispanic, Latino, or Spanish ethnicity by physical characteristics</rdfs:label>
         <IAO_0000115 xml:lang="en">Humans that have physical characteristics that are generally associated with the the people of Cuba, Mexico, Puerto Rico, South or Central America</IAO_0000115>
     </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
