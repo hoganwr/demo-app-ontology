@@ -45,7 +45,7 @@ As an application ontology, it only imports representations of universals, it do
 
 For example, it imports sex terms from PATO, gender and marital status terms from the Ontology of Medically Related Social Entities, birth event from the ACGT ontology, and human being from the Ontology of Biomedical Investigations.</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <owl:imports rdf:resource="&obo;bfo.owl"/>
+        <owl:imports rdf:resource="&obo;bfo/2014-05-03/classes-only.owl"/>
     </owl:Ontology>
     
 
@@ -115,6 +115,12 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
         <IAO_0000111 xml:lang="en">definition</IAO_0000111>
         <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
     
 
 
@@ -371,6 +377,36 @@ For example, it imports sex terms from PATO, gender and marital status terms fro
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000035"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="&obo;OBI_0100026">
@@ -568,12 +604,6 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <IAO_0000118 rdf:datatype="&xsd;string">singly inhering of a physical entity</IAO_0000118>
     </owl:Class>
     <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A physical object quality which inheres in a single-bearer.</owl:annotatedTarget>
         <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
@@ -581,7 +611,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a physical entity</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
@@ -593,19 +623,25 @@ This issue is outside the scope of OBI.</IAO_0000116>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">single bearer quality of a physical entity</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of a physical entity</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
     <owl:Axiom>
         <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of an object</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">monadic quality of continuant</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001237"/>
     </owl:Axiom>
@@ -637,15 +673,15 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     <owl:Axiom>
-        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of a continuant</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A quality which inheres in a continuant.</owl:annotatedTarget>
         <IAO_xref rdf:datatype="&xsd;string">PATOC:GVG</IAO_xref>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <IAO_xref rdf:datatype="&xsd;string"></IAO_xref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">quality of a continuant</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
         <owl:annotatedSource rdf:resource="&obo;PATO_0001241"/>
     </owl:Axiom>
     
